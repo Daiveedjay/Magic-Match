@@ -113,6 +113,9 @@ function App() {
   return (
     <div className="App">
       <h1>Magic Match ✨</h1>
+      <p>
+        Try to match all the cards in <span> 10 moves or under</span>
+      </p>
       <button onClick={shuffleCards}>New Game</button>
       <div className="card-grid">
         {cards.map((card) => (

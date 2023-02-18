@@ -2,10 +2,18 @@
   max-width: 900px;
   margin: 20px auto;
   padding: 2rem;
-  /* border: 2px solid #fff; */
 }
 .App h1 {
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.App p {
+  padding-bottom: 1.5rem;
+}
+
+.App p span {
+  color: gold;
+  font-weight: 600;
 }
 
 button {
