@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 2rem;
+  /* border: 2px solid #fff; */
+}
+.App h1 {
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-style: 1em;
+}
+button:hover {
+  background: #c23866;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.turns {
+  font-size: 1.6rem;
+  padding: 2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .App {
+    max-width: 650px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 700px) {
+  .App {
+    max-width: 500px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 500px) {
+  .App {
+    max-width: 400px;
+  }
+  .card-grid {
+    gap: 1.5rem;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 400px) {
+  .App {
+    max-width: 350px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.matched__class {
+  border: 2px solid gold;
 }

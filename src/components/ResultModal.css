@@ -1,0 +1,68 @@
+.modal {
+  width: 60%;
+  max-width: 700px;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: #d7d7d7;
+  background: rgb(241, 230, 164);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+
+.modal h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.modal span {
+  font-size: 7rem;
+}
+
+@media (max-width: 1000px) {
+  .modal {
+    width: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .modal {
+    width: 60%;
+  }
+  .modal h2 {
+    font-size: 2.5rem;
+  }
+  .modal span {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .modal h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .modal {
+    width: 70%;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal {
+    width: 90%;
+  }
+  .modal h2 {
+    font-size: 2rem;
+  }
+}
